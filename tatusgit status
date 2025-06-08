@@ -1,0 +1,225 @@
+[33mcommit 7a810ffca08598a3948ef7a181374b5fca9ec974[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Jitvanzara007 <jitvanzara007@gmaul.com>
+Date:   Mon Jun 2 23:43:09 2025 +0530
+
+    Initial commit: WanderWise Travel Planner
+
+[1mdiff --git a/src/pages/PlacePage.jsx b/src/pages/PlacePage.jsx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f229f65[m
+[1m--- /dev/null[m
+[1m+++ b/src/pages/PlacePage.jsx[m
+[36m@@ -0,0 +1,212 @@[m
+[32m+[m[32mimport { useState, useEffect } from 'react';[m
+[32m+[m[32mimport { useParams } from 'react-router-dom';[m
+[32m+[m[32mimport { FiMapPin, FiCalendar, FiDollarSign, FiInfo, FiClock, FiSun, FiStar } from 'react-icons/fi';[m
+[32m+[m
+[32m+[m[32mconst PlacePage = () => {[m
+[32m+[m[32m  const { id } = useParams();[m
+[32m+[m[32m  const [place, setPlace] = useState(null);[m
+[32m+[m[32m  const [loading, setLoading] = useState(true);[m
+[32m+[m
+[32m+[m[32m  useEffect(() => {[m
+[32m+[m[32m    // Simulated API call - replace with actual API call[m
+[32m+[m[32m    const fetchPlaceDetails = async () => {[m
+[32m+[m[32m      try {[m
+[32m+[m[32m        // Mock data for different places[m
+[32m+[m[32m        const places = {[m
+[32m+[m[32m          '1': {[m
+[32m+[m[32m            id: '1',[m
+[32m+[m[32m            name: 'Mount Fuji',[m
+[32m+[m[32m            location: 'Tokyo, Japan',[m
+[32m+[m[32m            description: 'Mount Fuji is Japan\'s highest mountain and one of its most iconic symbols. This active volcano stands at 3,776 meters and offers breathtaking views of the surrounding landscape.',[m
+[32m+[m[32m            image: 'https://images.unsplash.com/photo-1570459029079-2e5e2ccf9a1c',[m
+[32m+[m[32m            rating: 4.9,[m
+[32m+[m[32m            price: '¥5,000',[m
+[32m+[m[32m            openingHours: '24/7 (Best viewed at sunrise)',[m
+[32m+[m[32m            bestTimeToVisit: 'July to September',[m
+[32m+[m[32m            highlights: [[m
+[32m+[m[32m              'Iconic Japanese landmark',[m
+[32m+[m[32m              'UNESCO World Heritage Site',[m
+[32m+[m[32m              'Stunning sunrise views',[m
+[32m+[m[32m              'Hiking trails for all levels',[m
+[32m+[m[32m            ],[m
+[32m+[m[32m            tips: [[m
+[32m+[m[32m              'Book accommodation in advance during climbing season',[m
+[32m+[m[32m              'Start early to avoid crowds',[m
+[32m+[m[32m              'Check weather conditions before climbing',[m
+[32m+[m[32m              'Bring appropriate hiking gear',[m
+[32m+[m[32m            ],[m
+[32m+[m[32m          },[m
+[32m+[m[32m          '2': {[m
+[32m+[m[32m            id: '2',[m
+[32m+[m[32m            name: 'Eiffel Tower',[m
+[32m+[m[32m            location: 'Paris, France',[m
+[32m+[m[32m            description: 'The Eiffel Tower is a wrought-iron lattice tower located on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower.',[m
+[32m+[m[32m            image: 'https://images.unsplash.com/photo-1543349689-9a4d426bee8e',[m
+[32m+[m[32m            rating: 4.8,[m
+[32m+[m[32m            price: '€26',[m
+[32m+[m[32m            openingHours: '9:00 AM - 12:45 AM',[m
+[32m+[m[32m            bestTimeToVisit: 'April to June, September to October',[m
+[32m+[m[32m            highlights: [[m
+[32m+[m[32m              'Iconic Paris landmark',[m
+[32m+[m[32m              'Panoramic city views',[m
+[32m+[m[32m              'Evening light show',[m
+[32m+[m[32m              'Three observation decks',[m
+[32m+[m[32m            ],[m
+[32m+[m[32m            tips: [[m
+[32m+[m[32m              'Book tickets in advance to avoid long queues',[m
+[32m+[m[32m              'Visit early morning or late evening for fewer crowds',[m
+[32m+[m[32m              'Take the stairs to the second floor for a unique experience',[m
+[32m+[m[32m              'Stay for the evening light show',[m
+[32m+[m[32m            ],[m
+[32m+[m[32m          },[m
+[32m+[m[32m          '3': {[m
+[32m+[m[32m            id: '3',[m
+[32m+[m[32m            name: 'Bali Beaches',[m
+[32m+[m[32m            location: 'Bali, Indonesia',[m
+[32m+[m[32m            description: 'Bali\'s beaches are world-renowned for their pristine white sand, crystal clear waters, and stunning sunsets. From popular surf spots to hidden coves, there\'s a beach for every type of traveler.',[m
+[32m+[m[32m            image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4',[m
+[32m+[m[32m            rating: 4.7,[m
+[32m+[m[32m            price: 'Free',[m
+[32m+[m[32m            openingHours: '24/7',[m
+[32m+[m[32m            bestTimeToVisit: 'April to October',[m
+[32m+[m[32m            highlights: [[m
+[32m+[m[32m              'World-class surfing spots',[m
+[32m+[m[32m              'Stunning sunsets',[m
+[32m+[m[32m              'Water sports activities',[m
+[32m+[m[32m              'Beachfront dining',[m
+[32m+[m[32m            ],[m
+[32m+[m[32m            tips: [[m
+[32m+[m[32m              'Visit early morning for the best waves',[m
+[32m+[m[32m              'Bring reef-safe sunscreen',[m
+[32m+[m[32m              'Check tide times before swimming',[m
+[32m+[m[32m              'Respect local customs and dress codes',[m
+[32m+[m[32m            ],[m
+[32m+[m[32m          },[m
+[32m+[m[32m        };[m
+[32m+[m
+[32m+[m[32m        const selectedPlace = places[id] || null;[m
+[32m+[m[32m        setPlace(selectedPlace);[m
+[32m+[m[32m        setLoading(false);[m
+[32m+[m[32m      } catch (error) {[m
+[32m+[m[32m        console.error('Error fetching place details:', error);[m
+[32m+[m[32m        setLoading(false);[m
+[32m+[m[32m      }[m
+[32m+[m[32m    };[m
+[32m+[m
+[32m+[m[32m    fetchPlaceDetails();[m
+[32m+[m[32m  }, [id]);[m
+[32m+[m
+[32m+[m[32m  if (loading) {[m
+[32m+[m[32m    return ([m
+[32m+[m[32m      <div className="min-h-screen bg-gray-50 flex items-center justify-center">[m
+[32m+[m[32m        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    );[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  if (!place) {[m
+[32m+[m[32m    return ([m
+[32m+[m[32m      <div className="min-h-screen bg-gray-50 flex items-center justify-center">[m
+[32m+[m[32m        <div className="text-center">[m
+[32m+[m[32m          <h2 className="text-2xl font-bold text-gray-900 mb-2">Place Not Found</h2>[m
+[32m+[m[32m          <p className="text-gray-600">The place you're looking for doesn't exist.</p>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    );[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  return ([m
+[32m+[m[32m    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">[m
+[32m+[m[32m      <div className="max-w-7xl mx-auto">[m
+[32m+[m[32m        {/* Hero Section */}[m
+[32m+[m[32m        <div className="relative h-96 rounded-2xl overflow-hidden mb-8">[m
+[32m+[m[32m          <img[m
+[32m+[m[32m            src={place.image}[m
+[32m+[m[32m            alt={place.name}[m
+[32m+[m[32m            className="w-full h-full object-cover"[m
+[32m+[m[32m          />[m
+[32m+[m[32m          <div className="absolute inset-0 bg-black bg-opacity-40"></div>[m
+[32m+[m[32m          <div className="absolute bottom-0 left-0 right-0 p-8 text-white">[m
+[32m+[m[32m            <h1 className="text-4xl font-bold mb-2">{place.name}</h1>[m
+[32m+[m[32m            <div className="flex items-center">[m
+[32m+[m[32m              <FiMapPin className="mr-2" />[m
+[32m+[m[32m              <p>{place.location}</p>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m[32m        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">[m
+[32m+[m[32m          {/* Main Content */}[m
+[32m+[m[32m          <div className="lg:col-span-2 space-y-8">[m
+[32m+[m[32m            {/* Description */}[m
+[32m+[m[32m            <div className="bg-white rounded-xl shadow-sm p-6">[m
+[32m+[m[32m              <h2 className="text-2xl font-bold text-gray-900 mb-4">About</h2>[m
+[32m+[m[32m              <p className="text-gray-600">{place.description}</p>[m
+[32m+[m[32m            </div>[m
+[32m+[m
+[32m+[m[32m            {/* Highlights */}[m
+[32m+[m[32m            <div className="bg-white rounded-xl shadow-sm p-6">[m
+[32m+[m[32m              <h2 className="text-2xl font-bold text-gray-900 mb-4">Highlights</h2>[m
+[32m+[m[32m              <ul className="space-y-2">[m
+[32m+[m[32m                {place.highlights.map((highlight, index) => ([m
+[32m+[m[32m                  <li key={index} className="flex items-start">[m
+[32m+[m[32m                    <FiStar className="text-yellow-400 mt-1 mr-2" />[m
+[32m+[m[32m                    <span className="text-gray-600">{highlight}</span>[m
+[32m+[m[32m                  </li>[m
+[32m+[m[32m                ))}[m
+[32m+[m[32m              </ul>[m
+[32m+[m[32m            </div>[m
+[32m+[m
+[32m+[m[32m            {/* Tips */}[m
+[32m+[m[32m            <div className="bg-white rounded-xl shadow-sm p-6">[m
+[32m+[m[32m              <h2 className="text-2xl font-bold text-gray-900 mb-4">Travel Tips</h2>[m
+[32m+[m[32m              <ul className="space-y-2">[m
+[32m+[m[32m                {place.tips.map((tip, index) => ([m
+[32m+[m[32m                  <li key={index} className="flex items-start">[m
+[32m+[m[32m                    <FiInfo className="text-blue-500 mt-1 mr-2" />[m
+[32m+[m[32m                    <span className="text-gray-600">{tip}</span>[m
+[32m+[m[32m                  </li>[m
+[32m+[m[32m                ))}[m
+[32m+[m[32m              </ul>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m
+[32m+[m[32m          {/* Sidebar */}[m
+[32m+[m[32m          <div className="space-y-6">[m
+[32m+[m[32m            {/* Quick Info */}[m
+[32m+[m[32m            <div className="bg-white rounded-xl shadow-sm p-6">[m
+[32m+[m[32m              <h2 className="text-xl font-bold text-gray-900 mb-4">Quick Info</h2>[m
+[32m+[m[32m              <div className="space-y-4">[m
+[32m+[m[32m                <div className="flex items-center">[m
+[32m+[m[32m                  <FiDollarSign className="text-gray-400 mr-2" />[m
+[32m+[m[32m                  <span className="text-gray-600">Price: {place.price}</span>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <div className="flex items-center">[m
+[32m+[m[32m                  <FiClock className="text-gray-400 mr-2" />[m
+[32m+[m[32m                  <span className="text-gray-600">Hours: {place.openingHours}</span>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <div className="flex items-center">[m
+[32m+[m[32m                  <FiSun className="text-gray-400 mr-2" />[m
+[32m+[m[32m                  <span className="text-gray-600">[m
+[32m+[m[32m                    Best Time: {place.bestTimeToVisit}[m
+[32m+[m[32m                  </span>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <div className="flex items-center">[m
+[32m+[m[32m                  <FiStar className="text-yellow-400 mr-2" />[m
+[32m+[m[32m                  <span className="text-gray-600">Rating: {place.rating}/5</span>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m
+[32m+[m[32m            {/* Add to Trip Button */}[m
+[32m+[m[32m            <button className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">[m
+[32m+[m[32m              Add to My Trip[m
+[32m+[m[32m            </button>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  );[m
+[32m+[m[32m};[m
+[32m+[m
+[32m+[m[32mexport default PlacePage;[m[41m [m
+\ No newline at end of file[m
