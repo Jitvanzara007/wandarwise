@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { countries } from '../data/countries.jsx';
 import { FiArrowRight, FiMapPin, FiStar, FiExternalLink, FiMap, FiClock, FiX, FiCheckCircle, FiCompass, FiCalendar, FiDollarSign, FiShield } from 'react-icons/fi';
 import { auth } from '../config/firebase';
+import homeTravelImage from '/HomeTravel.webp';
 
 
 const Home = () => {
@@ -187,7 +188,7 @@ const Home = () => {
       <section className="relative min-h-[60vh] md:h-screen flex flex-col items-center justify-center w-full">
         <div className="absolute inset-0">
           <img
-            src={'/images/HomeTravel.webp'}
+            src={homeTravelImage}
             alt="Travel background"
             className="w-full h-full object-cover object-center"
             style={{ objectPosition: 'center 30%' }}
