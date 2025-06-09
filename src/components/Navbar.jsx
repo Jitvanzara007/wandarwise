@@ -3,7 +3,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { FiMenu, FiX, FiUser, FiLogOut } from 'react-icons/fi';
 import { auth } from '../config/firebase';
 import { signOut } from 'firebase/auth';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.png?url';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
