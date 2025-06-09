@@ -4,6 +4,7 @@ import { countries } from '../data/countries.jsx';
 import { FiArrowRight, FiMapPin, FiStar, FiExternalLink, FiMap, FiClock, FiX, FiCheckCircle, FiCompass, FiCalendar, FiDollarSign, FiShield } from 'react-icons/fi';
 import { auth } from '../config/firebase';
 
+
 const Home = () => {
   const [loading, setLoading] = useState(true);
   const [loadedImages, setLoadedImages] = useState({});
@@ -186,7 +187,7 @@ const Home = () => {
       <section className="relative min-h-[60vh] md:h-screen flex flex-col items-center justify-center w-full">
         <div className="absolute inset-0">
           <img
-            src="/src/assets/HomeTravel.png"
+            src='/images/HomeTravel.png'
             alt="Travel background"
             className="w-full h-full object-cover object-center"
             style={{ objectPosition: 'center 30%' }}
