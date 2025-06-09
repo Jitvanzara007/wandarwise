@@ -44,7 +44,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <Link to="/" className="flex-shrink-0 flex items-center transform hover:scale-105 transition-transform duration-300">
             <img 
-              src="logo.png"
+              src="/logo.png"
               alt="WanderWise" 
               className="navbar-logo object-contain m-0 p-0"
               style={{ height: "260px" }}
