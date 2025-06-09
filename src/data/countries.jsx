@@ -1,37 +1,10 @@
 import { info } from "autoprefixer";
-import grandcanal from '../assets/italy/grandcanal.jpg';
-import uffizi from  '../assets/italy/uffizi.jpg';
-import albaicin from  '../assets/spain/Albaicín.jpg';
-import alhambra from  '../assets/spain/Alhambra.jpg';
-import calaComte from  '../assets/spain/CalaComte.jpg';
-import daltVila from  '../assets/spain/DaltVila.jpg';
-import plaza from  '../assets/spain/plaza.png';
-import sevilleCathedral from  '../assets/spain/SevilleCathedral.avif';
-import chapelBridgeLucerne from '../assets/Thailand/chapel-bridge-lucerne.jpg';
-import lakeZurich from '../assets/Thailand/lakezurich.jpg';
-import strip from '../assets/Thailand/strip.jpg';
-import tigerCaveTemple from '../assets/Thailand/TigerCaveTemple.jpg';
-import railayBeach from '../assets/Thailand/RailayBeach.jpg';
-import doiSuthep from '../assets/Thailand/DoiSuthep.jpg';
-import watPhraSingh from '../assets/Thailand/WatPhraSingh.jpg';
-import bigBuddha from '../assets/Thailand/BigBuddha.jpg';
-import patongBeach from '../assets/Thailand/Patongbeach.jpg';
-import chatuchakMarket from '../assets/Thailand/Cha-tu-chak-market.webp';
-import watArun from '../assets/Thailand/Watarun.jpg';
-import grandPalace from '../assets/Thailand/grandpalace.jpg';
-
-// UAE images
-import ferrariWorld from '../assets/ferrari-world.jpg';
-import louvreAbuDhabi from '../assets/louvre-abu-dhabi.jpg';
-import sheikhGrandMosque from '../assets/SheikhGrandMosque.jpg';
-import unitedArab from '../assets/United-arab.avif';
-
-// France images
 
 
-import louvreMuseum from '../assets/louvre-museum.png';
-import effielTower from '../assets/effieltower.png';
-import basilique from '../assets/Basilique.png';
+
+
+
+//
 
 // Australia images
 import uluru from '../assets/uluru.png';
@@ -537,7 +510,7 @@ export const countries = [
                     {
                         id: "louvre-museum",
                         name: "Louvre Museum",
-                        image: louvreMuseum,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749460806/louvre-museum_hd7ehk.png",
                         description: "World's largest art museum and historic monument.",
                         rating: 4.8,
                         duration: "3-4 hours",
@@ -602,7 +575,7 @@ export const countries = [
                     {
                         id: "basilique-notre-dame",
                         name: "Basilique Notre-Dame",
-                        image: basilique,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749460740/Basilique_qeuurj.png",
                         description: "Beautiful neo-Gothic basilica in Nice.",
                         rating: 4.6,
                         duration: "1 hour",
@@ -1090,7 +1063,7 @@ export const countries = [
                     {
                         id: "strip",
                         name: "The Strip",
-                        image: strip,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749461551/strip_bq2bzw.jpg",
                         description: "Famous 4-mile stretch of Las Vegas Boulevard.",
                         rating: 4.9,
                         duration: "Full day",
@@ -1312,7 +1285,7 @@ export const countries = [
         id: 3,
         name: "United Arab Emirates",
         description: "Modern desert nation known for luxury shopping, ultramodern architecture, and lively nightlife.",
-        image: unitedArab,
+        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749460783/United-arab_qzwscj.avif",
         currency: "UAE Dirham (AED)",
         language: "Arabic",
         timezone: "UTC+4",
@@ -1425,7 +1398,7 @@ export const countries = [
                     {
                         id: "sheikh-zayed-mosque",
                         name: "Sheikh Zayed Mosque",
-                        image: sheikhGrandMosque,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749460752/SheikhGrandMosque_zlgz9d.jpg",
                         description: "Largest mosque in the UAE with stunning architecture.",
                         rating: 4.9,
                         duration: "1-2 hours",
@@ -1453,7 +1426,7 @@ export const countries = [
                     {
                         id: "louvre-abu-dhabi",
                         name: "Louvre Abu Dhabi",
-                        image: louvreAbuDhabi,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749460739/louvre-abu-dhabi_caqvsh.jpg",
                         description: "Art and civilization museum with works from around the world.",
                         bestTimeToVisit: "All year",
                         rating: 4.8,
@@ -1463,7 +1436,7 @@ export const countries = [
                     {
                         id: "ferrari-world",
                         name: "Ferrari World",
-                        image: ferrariWorld,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749460735/ferrari-world_s1utrm.jpg",
                         description: "Indoor Ferrari theme park with thrilling rides.",
                         rating: 4.8,
                         duration: "Full day",
@@ -1609,7 +1582,7 @@ export const countries = [
                     {
                         id: "grand-canal",
                         name: "Grand Canal",
-                        image: grandcanal,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749460942/grandcanal_aywl6c.jpg",
                         description: "Venice's main waterway and the city's most famous canal.",
                         rating: 4.9,
                         duration: "1-2 hours",
@@ -1674,7 +1647,7 @@ export const countries = [
                     {
                         id: "uffizi-gallery",
                         name: "Uffizi Gallery",
-                        image: uffizi,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749460936/uffizi_dj1teq.jpg",
                         description: "World-renowned art museum housing Renaissance masterpieces.",
                         rating: 4.9,
                         duration: "3-4 hours",
@@ -1761,7 +1734,7 @@ export const countries = [
                     {
                         id: "park-guell",
                         name: "Park Güell",
-                        image: parkGuell,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749460745/ParkG%C3%BCell_jza4bd.jpg",
                         description: "Colorful public park designed by Antoni Gaudí in Barcelona.",
                         rating: 4.8,
                         duration: "2 hours",
@@ -1795,7 +1768,7 @@ export const countries = [
                     {
                         id: "casa-batllo",
                         name: "Casa Batlló",
-                        image: casaBatllo,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749460739/CasaBatllo_kh7kl7.jpg",
                         description: "Gaudí's modernist masterpiece with a colorful facade in Barcelona.",
                         rating: 4.7,
                         duration: "1-2 hours",
@@ -1872,7 +1845,7 @@ export const countries = [
                     {
                         id: "prado-museum",
                         name: "Prado Museum",
-                        image: padroMuseum,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749460753/padromuseum_v3unwr.jpg",
                         description: "One of the world's finest art museums, home to masterpieces by Velázquez, Goya, and El Greco",
                         rating: 4.9,
                         duration: "3-4 hours",
@@ -1897,7 +1870,7 @@ export const countries = [
                             "Take a guided tour for better understanding"
                         ],
                         images: [
-                            "/src/assets/padromuseum.jpeg",
+                            "https://res.cloudinary.com/deyfj1idh/image/upload/v1749460753/padromuseum_v3unwr.jpg",
                             "https://www.museodelprado.es/assets/img/header/header.jpg",
                             "https://www.museodelprado.es/assets/img/header/header-2.jpg",
                             "https://www.museodelprado.es/assets/img/header/header-3.jpg"
@@ -1944,7 +1917,7 @@ export const countries = [
                     {
                         id: "plaza-mayor",
                         name: "Plaza Mayor",
-                        image: plaza,
+                        image: "http://studentweb.cortland.edu/Christine.Murphy/miniproj1/PlazaMayorSalamanca.jpg",
                         description: "Historic square with beautiful architecture and outdoor cafes.",
                         rating: 4.7,
                         duration: "1 hour",
@@ -2058,7 +2031,7 @@ export const countries = [
                     {
                         id: "seville-cathedral",
                         name: "Seville Cathedral",
-                        image: sevilleCathedral,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749461276/SevilleCathedral_skkjda.avif",
                         description: "Largest Gothic cathedral in the world and home to Christopher Columbus's tomb.",
                         rating: 4.9,
                         duration: "2-3 hours",
@@ -2100,7 +2073,7 @@ export const countries = [
                     {
                         id: "alhambra",
                         name: "Alhambra",
-                        image: alhambra,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749461276/Alhambra_fi6lxe.jpg",
                         description: "A stunning palace and fortress complex from the Nasrid dynasty, showcasing Islamic architecture and art.",
                         rating: 4.9,
                         duration: "3-4 hours",
@@ -2136,7 +2109,7 @@ export const countries = [
                     {
                         id: "albaicin",
                         name: "Albaicín",
-                        image: albaicin,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749461277/Albaic%C3%ADn_eyxzh0.jpg",
                         description: "The Albaicín is Granada's historic Moorish quarter, a UNESCO World Heritage site known for its narrow, winding streets, white-washed houses, and stunning views of the Alhambra. This ancient neighborhood preserves the medieval Islamic urban fabric with its characteristic 'cármenes' (houses with gardens), traditional water channels, and numerous viewpoints offering panoramic vistas. The area is home to historic churches, ancient Arab baths, and the famous Mirador de San Nicolás, where visitors can enjoy one of the best views of the Alhambra, especially at sunset. The neighborhood's authentic atmosphere, traditional tea houses, and local craft shops make it a must-visit destination for those seeking to experience Granada's rich cultural heritage.",
                         rating: 4.7,
                         duration: "2-3 hours",
@@ -2165,7 +2138,7 @@ export const countries = [
                     {
                         id: "dalt-vila",
                         name: "Dalt Vila",
-                        image: daltVila,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749461274/DaltVila_ezvntj.jpg",
                         description: "Historic fortified old town of Ibiza, a UNESCO World Heritage site.",
                         rating: 4.8,
                         duration: "2-3 hours",
@@ -2201,7 +2174,7 @@ export const countries = [
                     {
                         id: "cala-comte",
                         name: "Cala Comte",
-                        image: calaComte,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749461273/CalaComte_lem6qv.jpg",
                         description: "One of Ibiza's most beautiful beaches with crystal-clear turquoise waters and stunning sunsets.",
                         rating: 4.9,
                         duration: "Half day",
@@ -2268,7 +2241,7 @@ export const countries = [
                     {
                         id: "grand-palace",
                         name: "Grand Palace",
-                        image: grandPalace,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749461549/grandpalace_d2wm8k.avif",
                         description: "Former royal residence and one of Thailand's most sacred sites.",
                         rating: 4.8,
                         duration: "2-3 hours",
@@ -2301,7 +2274,7 @@ export const countries = [
                     {
                         id: "wat-arun",
                         name: "Wat Arun",
-                        image: watArun,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749461557/Watarun_e6ex8w.jpg",
                         description: "Temple of Dawn with stunning riverside views",
                         rating: 4.7,
                         duration: "1-2 hours",
@@ -2334,7 +2307,7 @@ export const countries = [
                     {
                         id: "chatuchak-market",
                         name: "Chatuchak Weekend Market",
-                        image: chatuchakMarket,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749461550/Cha-tu-chak-market_mw8qoq.webp",
                         description: "World's largest weekend market with over 15,000 stalls",
                         rating: 4.6,
                         duration: "3-4 hours",
@@ -2376,7 +2349,7 @@ export const countries = [
                     {
                         id: "patong-beach",
                         name: "Patong Beach",
-                        image: patongBeach,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749461550/Patongbeach_gyeuqk.jpg",
                         description: "Popular beach with vibrant nightlife and water activities",
                         rating: 4.5,
                         duration: "Full day",
@@ -2409,7 +2382,7 @@ export const countries = [
                     {
                         id: "big-buddha",
                         name: "Big Buddha",
-                        image: bigBuddha,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749461545/BigBuddha_rchfkn.jpg",
                         description: "45-meter tall white marble statue with panoramic views",
                         rating: 4.7,
                         duration: "1-2 hours",
@@ -2451,7 +2424,7 @@ export const countries = [
                     {
                         id: "wat-phra-singh",
                         name: "Wat Phra Singh",
-                        image: watPhraSingh,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749461568/WatPhraSingh_nr6z2o.jpg",
                         description: "Most revered temple in Chiang Mai with beautiful Lanna architecture",
                         rating: 4.8,
                         duration: "1-2 hours",
@@ -2484,7 +2457,7 @@ export const countries = [
                     {
                         id: "doi-suthep",
                         name: "Doi Suthep",
-                        image: doiSuthep,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749461548/DoiSuthep_hbpojk.jpg",
                         description: "Sacred temple on the mountain with panoramic views",
                         rating: 4.7,
                         duration: "Half day",
@@ -2526,7 +2499,7 @@ export const countries = [
                     {
                         id: "railay-beach",
                         name: "Railay Beach",
-                        image: railayBeach,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749461550/RailayBeach_xewn7q.jpg",
                         description: "Secluded beach accessible only by boat, famous for rock climbing",
                         rating: 4.9,
                         duration: "Full day",
@@ -2559,7 +2532,7 @@ export const countries = [
                     {
                         id: "tiger-cave-temple",
                         name: "Tiger Cave Temple",
-                        image: tigerCaveTemple,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749461566/TigerCaveTemple_t92dcw.jpg",
                         description: "Buddhist temple with 1,237 steps to the summit",
                         rating: 4.6,
                         duration: "2-3 hours",
@@ -2794,7 +2767,7 @@ export const countries = [
                 id: "gold-coast",
                 name: "Gold Coast",
                 description: "Sunny coastal city known for its beaches, theme parks, and nightlife.",
-                image: goldCoast,
+                image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749460742/goldcoast_zofx5n.png",
                 temperature: "20°C - 30°C",
                 places: [
                     {
@@ -3019,7 +2992,7 @@ export const countries = [
                 id: "uluru",
                 name: "Uluru",
                 description: "Sacred site and natural wonder in the heart of Australia.",
-                image: uluru,
+                image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749460822/uluru_gplv3c.png",
                 temperature: "5°C - 35°C",
                 places: [
                     {
@@ -3606,7 +3579,7 @@ export const countries = [
                     {
                         id: "lake-zurich",
                         name: "Lake Zurich",
-                        image: lakeZurich,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749461549/lakezurich_wde2du.jpg",
                         description: "Beautiful lake offering boat tours and waterfront activities.",
                         bestTimeToVisit: "May to September",
                         rating: 4.7,
@@ -3810,7 +3783,7 @@ export const countries = [
                     {
                         id: "chapel-bridge",
                         name: "Chapel Bridge",
-                        image: chapelBridgeLucerne,
+                        image: "https://res.cloudinary.com/deyfj1idh/image/upload/v1749461548/chapel-bridge-lucerne_wy4mqo.jpg",
                         description: "Historic wooden bridge with painted interior panels.",
                         rating: 4.8,
                         duration: "1 hour",
