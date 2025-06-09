@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-lg fixed w-full z-50">
       <div className="flex justify-between items-center h-20 px-4">
-        {/* Logo - Start */}
+        
         <div className="flex items-center">
           <Link to="/" className="flex-shrink-0 flex items-center transform hover:scale-105 transition-transform duration-300">
             <img 

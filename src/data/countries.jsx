@@ -1,44 +1,46 @@
 import { info } from "autoprefixer";
-import grandcanal from '../assets/italy/grandcanal.jpg?url';
-import uffizi from  '../assets/italy/uffizi.jpg?url';
-import albaicin from  '../assets/spain/Albaicín.jpg?url';
-import alhambra from  '../assets/spain/Alhambra.jpg?url';
-import calaComte from  '../assets/spain/CalaComte.jpg?url';
-import daltVila from  '../assets/spain/DaltVila.jpg?url';
-import plaza from  '../assets/spain/plaza.png?url';
-import sevilleCathedral from  '../assets/spain/SevilleCathedral.avif?url';
-import chapelBridgeLucerne from '../assets/Thailand/chapel-bridge-lucerne.jpg?url';
-import lakeZurich from '../assets/Thailand/lakezurich.jpg?url';
-import strip from '../assets/Thailand/strip.jpg?url';
-import tigerCaveTemple from '../assets/Thailand/TigerCaveTemple.jpg?url';
-import railayBeach from '../assets/Thailand/RailayBeach.jpg?url';
-import doiSuthep from '../assets/Thailand/DoiSuthep.jpg?url';
-import watPhraSingh from '../assets/Thailand/WatPhraSingh.jpg?url';
-import bigBuddha from '../assets/Thailand/BigBuddha.jpg?url';
-import patongBeach from '../assets/Thailand/Patongbeach.jpg?url';
-import chatuchakMarket from '../assets/Thailand/Cha-tu-chak-market.webp?url';
-import watArun from '../assets/Thailand/Watarun.jpg?url';
-import grandPalace from '../assets/Thailand/grandpalace.jpg?url';
+import grandcanal from '../assets/italy/grandcanal.jpg';
+import uffizi from  '../assets/italy/uffizi.jpg';
+import albaicin from  '../assets/spain/Albaicín.jpg';
+import alhambra from  '../assets/spain/Alhambra.jpg';
+import calaComte from  '../assets/spain/CalaComte.jpg';
+import daltVila from  '../assets/spain/DaltVila.jpg';
+import plaza from  '../assets/spain/plaza.png';
+import sevilleCathedral from  '../assets/spain/SevilleCathedral.avif';
+import chapelBridgeLucerne from '../assets/Thailand/chapel-bridge-lucerne.jpg';
+import lakeZurich from '../assets/Thailand/lakezurich.jpg';
+import strip from '../assets/Thailand/strip.jpg';
+import tigerCaveTemple from '../assets/Thailand/TigerCaveTemple.jpg';
+import railayBeach from '../assets/Thailand/RailayBeach.jpg';
+import doiSuthep from '../assets/Thailand/DoiSuthep.jpg';
+import watPhraSingh from '../assets/Thailand/WatPhraSingh.jpg';
+import bigBuddha from '../assets/Thailand/BigBuddha.jpg';
+import patongBeach from '../assets/Thailand/Patongbeach.jpg';
+import chatuchakMarket from '../assets/Thailand/Cha-tu-chak-market.webp';
+import watArun from '../assets/Thailand/Watarun.jpg';
+import grandPalace from '../assets/Thailand/grandpalace.jpg';
 
 // UAE images
-import ferrariWorld from '../assets/ferrari-world.jpg?url';
-import louvreAbuDhabi from '../assets/louvre-abu-dhabi.jpg?url';
-import sheikhGrandMosque from '../assets/SheikhGrandMosque.jpg?url';
-import unitedArab from '../assets/United-arab.avif?url';
+import ferrariWorld from '../assets/ferrari-world.jpg';
+import louvreAbuDhabi from '../assets/louvre-abu-dhabi.jpg';
+import sheikhGrandMosque from '../assets/SheikhGrandMosque.jpg';
+import unitedArab from '../assets/United-arab.avif';
 
 // France images
-import louvreMuseum from '../assets/louvre-museum.png?url';
-import effielTower from '../assets/effieltower.png?url';
-import basilique from '../assets/Basilique.png?url';
+
+
+import louvreMuseum from '../assets/louvre-museum.png';
+import effielTower from '../assets/effieltower.png';
+import basilique from '../assets/Basilique.png';
 
 // Australia images
-import uluru from '../assets/uluru.png?url';
-import goldCoast from '../assets/goldcoast.png?url';
+import uluru from '../assets/uluru.png';
+import goldCoast from '../assets/goldcoast.png';
 
 // Other images
-import padroMuseum from '../assets/padromuseum.jpeg?url';
-import casaBatllo from '../assets/CasaBatllo.jpg?url';
-import parkGuell from '../assets/ParkGüell.jpg?url';
+import padroMuseum from '../assets/padromuseum.jpeg';
+import casaBatllo from '../assets/CasaBatllo.jpg';
+import parkGuell from '../assets/ParkGüell.jpg';
 
 
 export const countries = [
