@@ -188,7 +188,7 @@ const Home = () => {
       <section className="relative min-h-[60vh] md:h-screen flex flex-col items-center justify-center w-full">
         <div className="absolute inset-0">
           <img
-            src="/HomeTravel.webp"
+            src="https://res.cloudinary.com/deyfj1idh/image/upload/v1749454729/HomeTravel_cswz2q.webp"
             alt="Travel background"
             className="w-full h-full object-cover object-center"
             style={{ objectPosition: 'center 30%' }}
