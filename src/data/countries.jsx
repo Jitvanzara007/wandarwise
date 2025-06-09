@@ -3,19 +3,6 @@ import { info } from "autoprefixer";
 
 
 
-
-//
-
-// Australia images
-import uluru from '../assets/uluru.png';
-import goldCoast from '../assets/goldcoast.png';
-
-// Other images
-import padroMuseum from '../assets/padromuseum.jpeg';
-import casaBatllo from '../assets/CasaBatllo.jpg';
-import parkGuell from '../assets/ParkGüell.jpg';
-
-
 export const countries = [
     {
         id: 1,
